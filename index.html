@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Hover Effect Gallery</h1>
+    <nav class="nav_bar">
+      <ul>
+        <li><a href="#twoD">2D Transforms</a></li>
+        <li><a href="#threeD">3D Transforms</a></li>
+        <li><a href="#combination">Combination Effects</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+
+    <h2 id="twoD"><u>2D Transforms</u></h2>
+    <div class="basic">
+
+      <section class=" translate image-container">
+        <h3>translate()</h3>
+        <img src="./media/1.jfif" alt="">
+        <p>This moves the element 50 pixels to the right and 100 pixels down.</p>
+      </section>
+      <section class="rotate image-container">
+        <h3>rotate()</h3>
+        <img src="./media/2.avif" alt="">
+        <p>This rotates the element 45 degrees clockwise.</p>
+      </section>
+      <section class=" scale image-container">
+        <h3>scale()</h3>
+        <img src="./media/3.png" alt="">
+        <p>This scales the element to twice its original size in both width and height.</p>
+      </section>
+      <section class="skew image-container">
+        <h3>skewX()</h3>
+        <img src="./media/4.jfif" alt="">
+        <p>This skews the element 20 degrees along the X-axis</p>
+      </section>
+      <section class="skewY image-container">
+        <h3>skewY()</h3>
+        <img src="./media/6.png" alt="">
+        <p>This skews the element 20 degrees along the Y-axis</p>
+      </section>
+    </div>
+
+    <h2 id="threeD"><u>3D Transforms</u></h2>
+
+    <div class="basic">
+      <section class=" translate3d image-container">
+        <h3>translate3d()</h3>
+        <img src="./media/5.png" alt="">
+        <p>This moves the element 50 pixels to the right, 100 pixels down, and 50 pixels forward on the Z-axis.</p>
+      </section>
+      <section class="rotate3d image-container">
+        <h3>rotate3d()</h3>
+        <img src="./media/6.png" alt="">
+        <p>This spins the image 45 degrees around a line that passes through its center, tilted 45 degrees between the x
+          and y axes.</p>
+      </section>
+      <section class=" rotateX image-container">
+        <h3>rotateX()</h3>
+        <img src="./media/1.jfif" alt="">
+        <p>This rotates the element 45 degrees around the X-axis</p>
+      </section>
+      <section class="rotateY image-container">
+        <h3>rotateY()</h3>
+        <img src="./media/2.avif" alt="">
+        <p>This rotates the element 45 degrees around the Y-axis.</p>
+      </section>
+      <section class=" rotateZ image-container">
+        <h3>rotateZ()</h3>
+        <img src="./media/1.jfif" alt="">
+        <p>This rotates the element 45 degrees around the Z-axis</p>
+      </section>
+      <section class="scale3d image-container">
+        <h3>scale3d()</h3>
+        <img src="./media/2.avif" alt="">
+        <p>This scales the element to twice its original size along the X-axis.</p>
+      </section>
+    </div>
+
+    <h2 id="combination"><u>Combination Effects</u></h2>
+
+    <div class="basic">
+      <section class="combined image-container">
+        <h3>rotateX() and rotateY()</h3>
+        <img src="./media/5.png" alt="">
+        <p> Rotates the image around the X-axis (horizontally) by 360 degrees and
+          rotates the image around the Y-axis (vertically) by 180 degrees.</p>
+      </section>
+      <section class="combined1 image-container">
+        <h3>scale3d() and skewX()</h3>
+        <img src="./media/7.jfif" alt="">
+        <p>image will become wider along the X-axis and slightly shorter along the Y-axis
+          and it will be tilted diagonally along the X-axis.
+        </p>
+      </section>
+      <section class="combined2 image-container">
+        <h3>translate3d() and rotate3d()</h3>
+        <img src="./media/6.png" alt="">
+        <p>image smoothly transitions from its original state to a state where it is scaled differently along the X
+          and Y axes, skewed along the X-axis, and then moves and rotates in 3D space on hover.
+        </p>
+      </section>
+    </div>
+
+  </div>
+  <footer>
+    <h3>© 2025 My Website</h3>
+  </footer>
+</body>
+
+</html>

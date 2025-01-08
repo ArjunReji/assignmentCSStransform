@@ -1,0 +1,125 @@
+
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  text-align: center;
+}
+header {
+  background-color: rgb(15, 152, 197);
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+}
+footer {
+  background-color: rgb(30, 177, 226);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.nav_bar li{
+  display: inline-block;
+  margin-right: 20px;
+}
+.nav_bar li a{
+  text-decoration:none ;
+    font-weight: bold;
+    color: black;
+}
+
+
+.image-container{
+  text-align: center;
+  width: 300px;
+  margin: 20px;
+  perspective: 400px;
+  border: 1px solid rgb(216, 209, 209);
+  border-radius: 3px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.translate img:hover{
+  transform: translate(50px, 100px);
+}
+
+.rotate img:hover{
+  transform: rotate(45deg);
+}
+
+.scale img:hover{ 
+  transform: scale(2); 
+} 
+.skew img:hover{
+  transform: skewX(20deg);
+}
+.skewY img:hover{
+  transform: skewY(20deg);
+}
+
+.translate3d img:hover{
+  transform: translate3d(50px, 100px, 50px);
+}
+
+.rotate3d img:hover{
+  transform: rotate3d(1, 1, 0, 45deg);
+}
+
+.rotateX img:hover{
+  transform: rotateX(45deg);
+}
+
+.rotateY img:hover{
+  transform: rotateY(45deg);
+}
+
+.rotateZ img:hover{
+  transform: rotateZ(45deg);
+}
+
+.scale3d img:hover{
+  transform: scale3d(2, 1, 1);
+}
+.combined img {
+  transition: transform 1s ease-in-out; 
+}
+.combined img:hover{
+  transform: rotateX(360deg) rotateY(180deg);
+}
+.combined1:hover img {
+  transform: scale3d(1.2, 0.8, 1) skewX(20deg); 
+}
+.combined2:hover img {
+  transform: translate3d(20px, -10px, 50px) rotate3d(1, 0.5, 0, 120deg); 
+}
+
+
+
+@media (max-width: 767px) {
+  .basic{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .basic{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      
+  }
+}
+
+@media (min-width: 992px) {
+  .basic{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
